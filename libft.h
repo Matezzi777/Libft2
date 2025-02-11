@@ -43,7 +43,7 @@ void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 char	**ft_split(const char *s, char c);									//MISSING
-char	*ft_strjoin(const char *s1, const char *s2);						//MISSING
+char	*ft_strjoin(const char *s1, const char *s2);
 char	*ft_strtrim(const char *s1, const char *set);						//MISSING
 char	*ft_substr(const char *s, unsigned int start, size_t len);			//MISSING
 void	ft_striteri(char *s, void (*f)(unsigned int, char *));				//MISSING
