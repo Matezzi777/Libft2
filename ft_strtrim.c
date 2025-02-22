@@ -50,7 +50,7 @@ char	*ft_strtrim(const char *s1, const char *set)
 	j = 0;
 	while (!ft_is_char_in_set(s1[i], set))
 	{
-		trim[j] == s1[i];
+		trim[j] = s1[i];
 		i++;
 		j++;
 	}
