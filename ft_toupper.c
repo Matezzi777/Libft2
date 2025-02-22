@@ -1,4 +1,4 @@
-int	ft_tolower(int c)
+int	ft_toupper(int c)
 {
 	if ('a' <= c && c <= 'z')
 		return (c - 'a' + 'A');
