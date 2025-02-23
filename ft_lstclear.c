@@ -3,14 +3,14 @@
 void	ft_lstclear(t_list **lst, void (*del)(void*))
 {
 	t_list	*node;
-	t_list	*to_del;
 
-	node = *lst;
-	while (node->next)
+	if (!lst || !*lst)
+		return ;
+	while (*lst)
 	{
-		del(node->content);
-		to_del = node;
-		node = node->next;
-		free(to_del);
+		del((*lst)->content);
+		node = *lst;
+		*lst = (*lst)->next;
+		free(node);
 	}
 }

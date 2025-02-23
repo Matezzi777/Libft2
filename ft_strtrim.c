@@ -1,8 +1,8 @@
 #include "libft.h"
 
-static int	ft_is_char_in_set(char c, const char *set)
+static int	is_c_in_set(const char c, const char *set)
 {
-	size_t	i;
+	int	i;
 
 	i = 0;
 	while (set[i])
@@ -14,46 +14,29 @@ static int	ft_is_char_in_set(char c, const char *set)
 	return (0);
 }
 
-static size_t	ft_get_trimmed_size(const char *string, const char *set)
-{
-	size_t	len;
-	size_t	i;
-
-	len = 0;
-	i = 0;
-	while (ft_is_char_in_set(string[i], set))
-		i++;
-	while (string[i])
-	{
-		len++;
-		i++;
-	}
-	while (ft_is_char_in_set(string[--i], set))
-		len--;
-	return (len);
-}
-
 char	*ft_strtrim(const char *s1, const char *set)
 {
-	char	*trim;
-	size_t	size;
-	size_t	i;
-	size_t	j;
+	int		start;
+	int		end;
+	int		i;
+	char	*trimmed;
 
-	size = ft_get_trimmed_size(s1, set);
-	trim = (char *)malloc((size + 1) * sizeof(char));
-	if (!trim)
+	start = 0;
+	while (s1[start] && is_c_in_set(s1[start], set))
+		start++;
+	end = ft_strlen(s1);
+	while ((end > start) && is_c_in_set(s1[end - 1], set))
+		end--;
+	trimmed = (char *)malloc(end - start + 1);
+	if (!trimmed)
 		return (NULL);
 	i = 0;
-	while (ft_is_char_in_set(s1[i], set))
-		i++;
-	j = 0;
-	while (!ft_is_char_in_set(s1[i], set))
+	while (start < end)
 	{
-		trim[j] = s1[i];
+		trimmed[i] = s1[start];
 		i++;
-		j++;
+		start++;
 	}
-	trim[j] = '\0';
-	return (trim);
+	trimmed[i] = '\0';
+	return (trimmed);
 }
