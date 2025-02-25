@@ -42,7 +42,6 @@ SRCS = ft_atoi.c \
 		ft_substr.c \
 		ft_toupper.c \
 		ft_tolower.c
-OBJS = $(SRCS:.c=.o)
 BONUS_SRCS = ft_lstadd_back.c \
 		ft_lstadd_front.c \
 		ft_lstclear.c \
@@ -52,15 +51,12 @@ BONUS_SRCS = ft_lstadd_back.c \
 		ft_lstmap.c \
 		ft_lstnew.c \
 		ft_lstsize.c
+OBJS = $(SRCS:.c=.o)
 BONUS_OBJS = $(BONUS_SRCS:.c=.o)
 
 ####################################   RULES   ####################################
 #Creative rules
 all: $(NAME)
-
-test: $(NAME)
-	$(CC) $(CFLAGS) test.c $(INCLUDES) -L. -l:libft.a -o tests
-	./tests
 
 $(NAME): $(OBJS)
 	$(AR) $(NAME) $(OBJS)

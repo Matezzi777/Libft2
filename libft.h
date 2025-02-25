@@ -2,8 +2,8 @@
 # define LIBFT_H
 
 # include <unistd.h> //write()
-# include <stdlib.h> //malloc()
-# include <limits.h>
+# include <stdlib.h> //malloc(), free()
+# include <limits.h> //INT_MAX, INT_MIN
 
 typedef struct s_list
 {
