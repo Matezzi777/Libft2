@@ -50,10 +50,10 @@ char	*ft_itoa(int n)
 
 	length = get_size_to_malloc(n);
 	conversion = (char *)malloc((length + 1) * sizeof(char));
-	if (n == 0 || n == -2147483648)
-		return (manage_special_cases(n, conversion));
 	if (!conversion)
 		return (NULL);
+	if (n == 0 || n == -2147483648)
+		return (manage_special_cases(n, conversion));
 	if (n < 0)
 	{
 		conversion[0] = '-';
