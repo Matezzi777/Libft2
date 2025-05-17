@@ -6,7 +6,7 @@
 /*   By: maxmart2 <maxmart2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/26 03:27:22 by maxmart2          #+#    #+#             */
-/*   Updated: 2025/05/17 23:58:03 by maxmart2         ###   ########.fr       */
+/*   Updated: 2025/05/18 00:54:29 by maxmart2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,6 +47,12 @@
 #  define ULONG_MAX 18446744073709551615
 # endif
 
+typedef enum e_bool
+{
+	FALSE,
+	TRUE
+}				t_bool;
+
 typedef struct s_list
 {
 	void			*content;
@@ -54,19 +60,19 @@ typedef struct s_list
 }				t_list;
 
 // CARACTERES
-int				ft_isalpha(int c);
-int				ft_isdigit(int c);
-int				ft_isalnum(int c);
-int				ft_isascii(int c);
-int				ft_isblank(int c);
-int				ft_iscntrl(int c);
-int				ft_isgraph(int c);
-int				ft_isprint(int c);
-int				ft_ispunct(int c);
-int				ft_isspace(int c);
-int				ft_isxdigit(int c);
-int				ft_toupper(int c);
-int				ft_tolower(int c);
+t_bool			ft_isalpha(int c);
+t_bool			ft_isdigit(int c);
+t_bool			ft_isalnum(int c);
+t_bool			ft_isascii(int c);
+t_bool			ft_isblank(int c);
+t_bool			ft_iscntrl(int c);
+t_bool			ft_isgraph(int c);
+t_bool			ft_isprint(int c);
+t_bool			ft_ispunct(int c);
+t_bool			ft_isspace(int c);
+t_bool			ft_isxdigit(int c);
+t_bool			ft_toupper(int c);
+t_bool			ft_tolower(int c);
 
 // STRINGS
 size_t			ft_strlen(const char *s);

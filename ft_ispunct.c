@@ -6,16 +6,16 @@
 /*   By: maxmart2 <maxmart2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/17 23:10:35 by maxmart2          #+#    #+#             */
-/*   Updated: 2025/05/17 23:13:29 by maxmart2         ###   ########.fr       */
+/*   Updated: 2025/05/18 00:57:36 by maxmart2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_ispunct(int c)
+t_bool	ft_ispunct(int c)
 {
 	if (('!' <= c && c <= '/') || (':' <= c && c <= '@')
 		|| ('[' <= c && c <= '`') || ('{' <= c && c <= '~'))
-		return (1);
-	return (0);
+		return (TRUE);
+	return (FALSE);
 }

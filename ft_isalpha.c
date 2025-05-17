@@ -6,13 +6,15 @@
 /*   By: maxmart2 <maxmart2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/26 03:25:07 by maxmart2          #+#    #+#             */
-/*   Updated: 2025/02/26 03:25:09 by maxmart2         ###   ########.fr       */
+/*   Updated: 2025/05/18 00:57:15 by maxmart2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalpha(int c)
+#include "libft.h"
+
+t_bool	ft_isalpha(int c)
 {
 	if (('a' <= c && c <= 'z') || ('A' <= c && c <= 'Z'))
-		return (1);
-	return (0);
+		return (TRUE);
+	return (FALSE);
 }

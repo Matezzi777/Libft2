@@ -6,15 +6,17 @@
 /*   By: maxmart2 <maxmart2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/26 03:25:04 by maxmart2          #+#    #+#             */
-/*   Updated: 2025/02/26 03:25:05 by maxmart2         ###   ########.fr       */
+/*   Updated: 2025/05/18 00:57:12 by maxmart2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalnum(int c)
+#include "libft.h"
+
+t_bool	ft_isalnum(int c)
 {
 	if (('a' <= c && c <= 'z')
 		|| ('A' <= c && c <= 'Z')
 		|| ('0' <= c && c <= '9'))
-		return (1);
-	return (0);
+		return (TRUE);
+	return (FALSE);
 }

@@ -6,15 +6,15 @@
 /*   By: maxmart2 <maxmart2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/17 23:03:40 by maxmart2          #+#    #+#             */
-/*   Updated: 2025/05/17 23:06:31 by maxmart2         ###   ########.fr       */
+/*   Updated: 2025/05/18 00:57:39 by maxmart2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isspace(int c)
+t_bool	ft_isspace(int c)
 {
 	if (('\t' <= c && c <= '\r') || c == ' ')
-		return (1);
-	return (0);
+		return (TRUE);
+	return (FALSE);
 }

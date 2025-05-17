@@ -6,13 +6,15 @@
 /*   By: maxmart2 <maxmart2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/26 03:25:20 by maxmart2          #+#    #+#             */
-/*   Updated: 2025/02/26 03:25:21 by maxmart2         ###   ########.fr       */
+/*   Updated: 2025/05/18 00:57:33 by maxmart2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isprint(int c)
+#include "libft.h"
+
+t_bool	ft_isprint(int c)
 {
 	if (' ' <= c && c <= '~')
-		return (1);
-	return (0);
+		return (TRUE);
+	return (FALSE);
 }
