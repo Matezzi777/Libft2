@@ -6,7 +6,7 @@
 /*   By: maxmart2 <maxmart2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/17 23:50:49 by maxmart2          #+#    #+#             */
-/*   Updated: 2025/05/17 23:55:12 by maxmart2         ###   ########.fr       */
+/*   Updated: 2025/05/18 00:40:35 by maxmart2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,13 +17,13 @@ int	ft_pow(int x, int exp)
 	int	i;
 	int	pow;
 
-	if (x == 0 || exp < 0)
-		return (0);
 	if (exp == 0)
 		return (1);
+	if (x == 0 || exp < 0)
+		return (0);
 	i = 0;
 	pow = x;
 	while (++i < exp)
-		pow = pow * pow;
+		pow = x * pow;
 	return (pow);
 }
