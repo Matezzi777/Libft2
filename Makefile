@@ -8,7 +8,7 @@ RM = rm -rdf
 
 #Files
 NAME = libft.a
-SRCS = ft_atoi.c \
+RAW_SRCS = ft_atoi.c \
 		ft_bzero.c \
 		ft_calloc.c \
 		ft_isalnum.c \
@@ -50,7 +50,7 @@ SRCS = ft_atoi.c \
 		ft_substr.c \
 		ft_toupper.c \
 		ft_tolower.c
-BONUS_SRCS = ft_lstadd_back.c \
+RAW_BONUS_SRCS = ft_lstadd_back.c \
 		ft_lstadd_front.c \
 		ft_lstclear.c \
 		ft_lstdelone.c \
@@ -59,7 +59,9 @@ BONUS_SRCS = ft_lstadd_back.c \
 		ft_lstmap.c \
 		ft_lstnew.c \
 		ft_lstsize.c
+SRCS = $(addprefix srcs/, $(RAW_SRCS))
 OBJS = $(SRCS:.c=.o)
+BONUS_SRCS = $(addprefix srcs/, $(RAW_BONUS_SRCS))
 BONUS_OBJS = $(BONUS_SRCS:.c=.o)
 
 ####################################   RULES   ####################################
