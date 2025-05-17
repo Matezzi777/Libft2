@@ -33,6 +33,13 @@ RAW_SRCS = ft_atoi.c \
 		ft_putendl_fd.c \
 		ft_putnbr_fd.c \
 		ft_putstr_fd.c \
+		ft_print_address.c \
+		ft_print_character.c \
+		ft_print_hexa.c \
+		ft_print_integer.c \
+		ft_print_string.c \
+		ft_print_unsigned.c \
+		ft_printf.c \
 		ft_split.c \
 		ft_sqrt.c \
 		ft_strchr.c \

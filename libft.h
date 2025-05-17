@@ -6,7 +6,7 @@
 /*   By: maxmart2 <maxmart2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/26 03:27:22 by maxmart2          #+#    #+#             */
-/*   Updated: 2025/05/18 00:54:29 by maxmart2         ###   ########.fr       */
+/*   Updated: 2025/05/18 01:44:17 by maxmart2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -124,5 +124,14 @@ t_list			*ft_lstmap(t_list *lst, void *(*f)(void *),
 // MATHS
 unsigned int	ft_sqrt(unsigned int x);
 int				ft_pow(int x, int exp);
+
+// PRINTF
+int				ft_printf(const char *format, ...);
+int				ft_print_address(void *addr);
+int				ft_print_character(int c);
+int				ft_print_hexa(unsigned int n, t_bool maj);
+int				ft_print_integer(int n);
+int				ft_print_string(char *str);
+int				ft_print_unsigned(unsigned int n);
 
 #endif
