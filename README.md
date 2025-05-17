@@ -1,4 +1,7 @@
 # Libft2
+![Static Badge](https://img.shields.io/badge/Grade-125-green) ![Static Badge](https://img.shields.io/badge/Bonus-Yes-green?style=flat)
+ ![Static Badge](https://img.shields.io/badge/Language-C-blue?style=flat)
+
 Libft is the first project of the 42 Common Core.
 The aim of this project is to recode some functions from libc library + some custom functions.
 
