@@ -6,7 +6,7 @@
 /*   By: maxmart2 <maxmart2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/26 03:27:22 by maxmart2          #+#    #+#             */
-/*   Updated: 2025/05/22 00:11:35 by maxmart2         ###   ########.fr       */
+/*   Updated: 2025/05/23 02:49:20 by maxmart2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -91,6 +91,7 @@ void			ft_striteri(char *s, void (*f)(unsigned int, char *));
 char			*ft_strmapi(const char *s, char (*f)(unsigned int, char));
 
 // CONVERSION
+char			*ft_atob(unsigned char c);
 int				ft_atoi(const char *str);
 long			ft_atol(const char *str);
 long long		ft_atoll(const char *str);
