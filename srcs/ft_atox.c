@@ -1,34 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atob.c                                          :+:      :+:    :+:   */
+/*   ft_atox.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: maxmart2 <maxmart2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/23 02:38:38 by maxmart2          #+#    #+#             */
-/*   Updated: 2025/05/23 03:02:36 by maxmart2         ###   ########.fr       */
+/*   Created: 2025/05/23 02:58:49 by maxmart2          #+#    #+#             */
+/*   Updated: 2025/05/23 03:07:16 by maxmart2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// 'A' = 65 = 
-
-char	*ft_atob(unsigned char c)
+char	*ft_atox(unsigned char c, t_bool upper)
 {
-	int		i;
 	char	*bin;
+	char	*charset;
 
-	bin = (char *)malloc(9 * sizeof(char));
+	bin = (char *)malloc(3 * sizeof(char));
 	if (!bin)
 		return (NULL);
-	i = 0;
-	while (i < 8)
-	{
-		bin[7 - i] = c % 2 + '0';
-		c = c / 2;
-		i++;
-	}
-	bin[i] = '\0';
+	if (upper)
+		charset = "0123456789ABCDEF";
+	else
+		charset = "0123456789abcdef";
+	bin[0] = charset[c / 16];
+	bin[1] = charset[c % 16];
+	bin[2] = '\0';
 	return (bin);
 }

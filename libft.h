@@ -6,7 +6,7 @@
 /*   By: maxmart2 <maxmart2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/26 03:27:22 by maxmart2          #+#    #+#             */
-/*   Updated: 2025/05/23 02:49:20 by maxmart2         ###   ########.fr       */
+/*   Updated: 2025/05/23 03:04:45 by maxmart2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -95,6 +95,7 @@ char			*ft_atob(unsigned char c);
 int				ft_atoi(const char *str);
 long			ft_atol(const char *str);
 long long		ft_atoll(const char *str);
+char			*ft_atox(unsigned char c, t_bool upper);
 char			*ft_itoa(int n);
 
 // MEMOIRE
