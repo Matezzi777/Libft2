@@ -53,3 +53,6 @@ This project pass all francinette --strict tests.
 - ft_lstclear
 - ft_lstiter
 - ft_lstmap
+#### Functions from other 42 projects:
+- ft_printf
+- get_next_line
