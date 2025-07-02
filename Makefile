@@ -16,6 +16,7 @@ RAW_SRCS = ft_abs.c \
 		ft_atox.c \
 		ft_bzero.c \
 		ft_calloc.c \
+		ft_error.c \
 		ft_isalnum.c \
 		ft_isalpha.c \
 		ft_isascii.c \
