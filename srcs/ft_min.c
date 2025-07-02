@@ -6,12 +6,15 @@
 /*   By: maxmart2 <maxmart2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/02 18:18:01 by maxmart2          #+#    #+#             */
-/*   Updated: 2025/07/02 18:18:11 by maxmart2         ###   ########.fr       */
+/*   Updated: 2025/07/02 19:27:42 by maxmart2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/*
+	Return the lowest between two numbers.
+*/
 int	ft_min(int a, int b)
 {
 	if (a <= b)
